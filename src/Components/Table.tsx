@@ -1,14 +1,6 @@
 import React from 'react';
+import { DataType } from '../Interfaces/IDataType';
 import { Table, Tag, Space, TableColumnsType } from 'antd';
-
-interface DataType {
-  key: string;
-  name: string;
-  age: number;
-  address: string;
-  tags: string[];
-  phoneNumber: string;
-}
 
 const columns: TableColumnsType<DataType> = [
   {
