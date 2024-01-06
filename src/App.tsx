@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.css';
-import { UsersTable } from './Components/Table';
+import React from "react";
+import "./App.css";
+import { UniversityTable } from "./Components/UniversityTable";
 
 function App() {
   return (
     <>
-      <UsersTable/>
+      <UniversityTable />
     </>
   );
 }
