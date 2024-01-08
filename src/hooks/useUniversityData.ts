@@ -7,14 +7,14 @@ export const useUniversityData = () => {
   const [page, setPage] = useState<number>(1);
   const [dataSource, setDataSource] = useState<DataType[]>();
   const [loading, setLoading] = useState(false);
+  
 
   const getUniversity = async (page: number, limit: number) => {
+    const offset = (page - 1) * limit
     try {
       setLoading(true);
       const response = await axios.get(
-        `http://universities.hipolabs.com/search?limit=${limit}&offset=${
-          (page - 1) * limit
-        }`
+        `http://universities.hipolabs.com/search?limit=${limit}&offset=${offset}`
       );
       setDataSource(response.data);
     } catch (error) {
