@@ -4,8 +4,8 @@ export const GlobalStyles = createGlobalStyle`
     :root {
         --dark: black;
         --light: white;
-        --buttonColor: lightgrey;
-        --buttonColorDisabled: rgba(211, 211, 211, 0.467); 
+        --buttonColor: #1989f9;;
+        --buttonColorDisabled: #66adf4; 
     }
 
     html, body {
