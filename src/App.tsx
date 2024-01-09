@@ -1,12 +1,14 @@
 import React from "react";
 import "./App.css";
 import { UniversityTable } from "./Components/UniversityTable";
-import {Navbar} from './Components/Navbar';
+import { Navbar } from "./Components/Navbar";
+import { Form } from "./Components/Form";
 
 function App() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
+      <Form />
       <UniversityTable />
     </>
   );
