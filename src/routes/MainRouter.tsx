@@ -7,7 +7,7 @@ import { University } from '../Components/pages/University';
 import { ABOUT_ROUTE, CONTACTS_ROUTE, HOME_ROUTE, UNIVERSITY_ROUTE } from './configs';
 import { useAuth } from '../hooks/useAuth';
 
-const MainRouter: React.FC = () => {
+export const MainRouter: React.FC = () => {
   const { isAuth } = useAuth();
   
   const basedPath: RouteObject[] = [

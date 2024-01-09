@@ -33,21 +33,21 @@ const Button = styled.button`
   border: 0;
   border-radius: 15px;
   padding: 0.75rem 1.5rem;
-  background: rgb(167, 221, 7);
+  background: #1989f9;
 `;
 
 const ChangeThemeButton = styled.button`
   color: --text-color;
-  width: 70px;
+  width: 100px;
   height: 50px;
   border: 0;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
 `;
 
 const ChangeThemeIconImage = styled.img`
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 80%;
   margin: 0 auto;
 `;
 

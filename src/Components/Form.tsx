@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 const SiteForm = styled.form`
   color: --text-color;
+  font-weight: bold;
   display: flex;
   width: 500px;
   margin: 5rem auto;
@@ -16,20 +17,26 @@ const FormInput = styled.input`
   color: --text-color;
   padding: 0.7rem 1.7rem;
   margin: 5px;
-  border-radius: 10px;
+  border-radius: 30px;
+  background-color: #ececec;
+  border-color: #ff6a00;
 `
 
 const FormButton = styled.button`
-  color: --text-color;
-  padding: 0.5rem 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #1989f9;
+  padding: 1rem 2rem;
   border: 0;
-  border-radius: 5px;
+  border-radius: 30px;
   font-size: 17px;
   &:hover {
-    opacity: .7;
+    opacity: .8;
+    cursor: pointer;
   }
   &:disabled{
-    opacity: .2;
+    opacity: .5;
   }
 `
 
