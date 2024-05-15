@@ -7,6 +7,7 @@ export const useUniversityData = () => {
   const [page, setPage] = useState<number>(1);
   const [dataSource, setDataSource] = useState<DataType[]>();
   const [loading, setLoading] = useState(false);
+  
 
   const getUniversity = async (page: number, limit: number) => {
     const offset = (page - 1) * limit

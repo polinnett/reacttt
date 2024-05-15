@@ -1,4 +1,3 @@
-import react from "react";
 import { Table } from "antd";
 import { styled } from "styled-components";
 import {useUniversityData} from '../hooks/useUniversityData'
