@@ -1,11 +1,12 @@
-import react  from 'react'
 import { RouteObject, useRoutes } from "react-router-dom";
 import { About } from '../Components/pages/About';
 import { Contacts } from '../Components/pages/Contacts';
 import { Home } from '../Components/pages/Home';
 import { University } from '../Components/pages/University';
-import { ABOUT_ROUTE, CONTACTS_ROUTE, HOME_ROUTE, UNIVERSITY_ROUTE } from './configs';
+import Download from "../Components/pages/Download";
+import { ABOUT_ROUTE, CONTACTS_ROUTE, HOME_ROUTE, UNIVERSITY_ROUTE, DOWNLOAD_ROUTE, PAGINATION_ROUTE } from './configs';
 import { useAuth } from '../hooks/useAuth';
+import DynamicPagination from "../Components/pages/DynamicPagination";
 
 export const MainRouter: React.FC = () => {
   const { isAuth } = useAuth();
@@ -14,6 +15,8 @@ export const MainRouter: React.FC = () => {
     { path: ABOUT_ROUTE, element: <About /> },
     { path: CONTACTS_ROUTE, element: <Contacts /> },
     { path: HOME_ROUTE, element: <Home /> },
+    { path: DOWNLOAD_ROUTE, element: <Download /> },
+    { path: PAGINATION_ROUTE, element: <DynamicPagination /> },
   ];
   const authPath: RouteObject[] = isAuth
     ? [{ path: UNIVERSITY_ROUTE, element: <University /> }]
