@@ -11,6 +11,7 @@
     "@types/node": "^16.18.68",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
     "antd": "^5.12.5",
     "axios": "^1.6.5",
     "lint-staged": "^15.2.2",
@@ -23,12 +24,14 @@
     "react-scripts": "^5.0.1",
     "styled-components": "^6.1.6",
     "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-pwa": "^0.19.8",
     "web-vitals": "^2.1.4"
   },
   "lint-staged": {
     "./src/**/*.{js,json,jsx,ts,tsx,css}": [
-        "prettify",
-        "eslint --fix"
+      "prettify",
+      "eslint --fix"
     ]
   },
   "devDependencies": {
@@ -46,10 +49,9 @@
     "eslint-plugin-react-refresh": "^0.4.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "vite",
+    "preview": "vite preview --host",
+    "build": "tsc && vite build",
     "prettify": "prettier --write './src/**/*.{js,json,jsx,ts,tsx,css}'",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
