@@ -1,4 +1,3 @@
-// import { PaginationWrapper, ObserverBlock, CardWrapper } from './styles'
 import styled from 'styled-components'
 import { useDynamicPagination } from '../../hooks/useDynamicPagination'
 import UniversityCard from '../UniversityCard'
@@ -19,10 +18,9 @@ export const CardWrapper = styled.div`
 
 export const DynamicPagination = () => {
 	const { universitiesData, loading, ref } = useDynamicPagination()
-
 	return (
 		<>
-			<PaginationWrapper>
+			<PaginationWrapper>	
 				<CardWrapper>
 					{universitiesData?.length > 0 &&
 						universitiesData.map((university, index) => (

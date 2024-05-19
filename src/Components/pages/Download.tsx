@@ -20,6 +20,18 @@ const PdfForm = () => {
                         }
                     })}
                 />
+                    <input
+                    placeholder={'Введите ваш email'}
+                    alt={'email'}
+                    {...register("email", {
+                        required: "Обязательно к заполнению",
+                        pattern: /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/,
+                        minLength: {
+                          value: 10,
+                          message: "Введите почту форма example@site.ru",
+                        },
+                      })}
+                />
                 <input
                     type='file'
                     accept='image/*'
