@@ -19,6 +19,11 @@ const Navigation = styled.nav<FlexProp>`
   align-items: center;
   justify-content: space-around;
   font-size: 20px;
+  @media (max-width: 720px) {
+    flex-direction: column;
+    justify-items: center;
+    gap: 20px;
+  }
 `;
 const NavigationHeader = styled.header`
   margin: 1.5rem 0;
