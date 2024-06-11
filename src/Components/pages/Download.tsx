@@ -43,16 +43,18 @@ const PdfForm = () => {
                 <button type='submit'>Сохранить</button>
             </form>
             {formData && (
-                <PDFDownloadLink
-                    document={
-                        <MyDocument name={formData.name} picture={formData.picture} />
-                    }
-                    fileName={`${formData.name}.pdf`}
-                >
-                    {({loading}) =>
-                        loading ? 'Загрузка...' : 'Скачать'
-                    }
-                </PDFDownloadLink>
+              <PDFDownloadLink
+                document={
+                    <MyDocument name={formData.name} picture={formData.picture} />
+                }
+                fileName={`${formData.name}.pdf`}
+                data-testid="download-button"
+              >
+                  {({loading}) =>
+                    loading ? 'Загрузка...' : 'Скачать'
+                  }
+              </PDFDownloadLink>
+
             )}
         </>
     )
